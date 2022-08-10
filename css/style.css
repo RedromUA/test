@@ -33,6 +33,7 @@ html,
 body {
 	height: 100%;
 	width: 100%;
+	font-weight: 400;
 	font-size: 100%;
 	line-height: 1;
 	font-size: 14px;
@@ -76,4 +77,86 @@ h5,
 h6 {
 	font-size: inherit;
 	font-weight: 700;
+}
+
+.d-flex {
+	display: flex;
+}
+
+
+.container {
+	max-width: 1310px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.nav {
+	align-items: center;
+	padding: 32px 0;
+}
+
+.nav__list {
+	margin: 0 46px 0 auto;
+	
+}
+
+.nav__link {
+	color: #40494D;
+	font-size: 16px;
+	padding: 5px;
+	margin-right: 64px;
+	transition: .2s;
+}
+
+.nav__link:hover {
+	color: #000;
+	text-shadow: 0 0 1px #000;
+}
+
+.btn-nav__search{
+	position: relative;
+	border: 1px solid #40494D;
+	border-radius: 50%;
+	width: 58px;
+	height: 58px;
+	background: transparent;
+	transition: .2s;
+	margin-right: 15px;
+}
+.btn-nav__search:hover {
+box-shadow: 0 0 3px #000;
+}
+
+.btn-nav__search-img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn-nav__demo {
+	height: 58px;
+	padding: 18px 25px 19px;
+	background: 
+	#283337;
+	color: #fff;
+	font-size: 17px;
+	border-radius: 56px;
+	transition: .2s;
+	border: 2px solid transparent
+}
+.btn-nav__demo:hover {
+	border-color: #000;
+	background: #fff;
+	color: #000;
+}
+
+@media (max-width: 1220px) {
+	.nav__list {
+		margin: 0 0 0 auto;
+	}
+	.nav__link {
+		margin-right: 30px;
+	}
 }
